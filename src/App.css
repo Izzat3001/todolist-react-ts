@@ -13,7 +13,7 @@ App > div {
 
 .input-add {
   height: 25px;
-  width: auto;
+  /*width: auto;*/
   padding: 5px 7px;
   background-color: rgba(33, 176, 125, 0.7);
   border: none;
@@ -33,9 +33,30 @@ App > div {
   background-color: rgba(39, 20, 245, 0.7);
 }
 
+.filter-btn {
+  display: flex;
+  column-gap: 2px;
+}
+
+.btn {
+  padding-right: 5px;
+  padding-left: 5px;
+  background-color: #2ba4e3;
+  height: 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .add-task {
   display: flex;
   margin-bottom: 10px;
+}
+
+.tasks {
+  display: flex;
+  width: 204px;
+  justify-content: space-between;
 }
 
 .input-check {
