@@ -13,14 +13,20 @@ App > div {
 
 .input-add {
   height: 25px;
-  /*width: auto;*/
   padding: 5px 7px;
   background-color: rgba(33, 176, 125, 0.7);
   border: none;
   border-bottom: 1px solid #000;
   margin-right: 8px;
-
   font-size: 12px;
+}
+
+.input-add-error {
+  border: 1px solid red;
+}
+
+.error-message {
+  color: #c50404;
 }
 
 .btn-add {
@@ -48,9 +54,12 @@ App > div {
   cursor: pointer;
 }
 
+.active-filter {
+  background-color: #422be3;
+}
+
 .add-task {
   display: flex;
-  margin-bottom: 10px;
 }
 
 .tasks {
@@ -61,4 +70,8 @@ App > div {
 
 .input-check {
   margin-right: 5px;
+}
+
+.tasks-list {
+  margin-top: 10px;
 }
