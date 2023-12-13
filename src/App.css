@@ -3,8 +3,14 @@
   display: flex;
 }
 
-App > div {
+.App > div{
   margin-right: 50px;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .top-title {
@@ -37,6 +43,16 @@ App > div {
   border-radius: 5px;
   font-size: 14px;
   background-color: rgba(39, 20, 245, 0.7);
+}
+
+.btn-remove {
+  width: 35px;
+  height: 25px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: rgba(192, 29, 29, 0.7);
 }
 
 .filter-btn {
@@ -75,3 +91,8 @@ App > div {
 .tasks-list {
   margin-top: 10px;
 }
+
+.completed {
+  opacity: 0.5;
+}
+
