@@ -1,4 +1,6 @@
 import React, {ChangeEvent, KeyboardEvent, useState} from "react";
+import {Button, IconButton, TextField} from "@mui/material";
+import {ControlPoint} from "@mui/icons-material";
 
 type AddItemFormPropsType = {
     addItem: (title: string) => void;
@@ -14,7 +16,7 @@ export function AddItemForm(props: AddItemFormPropsType) {
 
     const onKeyUphendler = (e: KeyboardEvent<HTMLInputElement>) => {
         setError(null)
-        if (e.key === "Enter" && e.currentTarget.value.trim() !== " ") {
+        if (e.charCode === 13 && e.currentTarget.value !== " ") {
             onClickAddTaskButton()
         }
     }
@@ -30,22 +32,24 @@ export function AddItemForm(props: AddItemFormPropsType) {
 
     return (
         <div>
-            <div className='add-task'>
-                <input
-                    className={`input-add ${error ? " input-add-error" : ''}`}
-                    type="text" placeholder='write the task here!'
-                    value={addTaskTitle}
-                    onChange={onChangeAddTaskHandler}
-                    onKeyPress={onKeyUphendler}
-                />
-                <button
-                    className='btn-add'
-                    onClick={onClickAddTaskButton}
-                >
-                    Add
-                </button>
-            </div>
-            {error && (<div className="error-message">{error}</div>)}
+            <TextField
+                type="text"
+                label='write the task here!'
+                value={addTaskTitle}
+                onChange={onChangeAddTaskHandler}
+                onKeyPress={onKeyUphendler}
+                size='small'
+                error={!!error}
+                helperText={error}
+            />
+            <IconButton
+                onClick={onClickAddTaskButton}
+                // variant={"contained"}
+                color={"primary"}
+                size="small"
+            >
+                <ControlPoint/>
+            </IconButton>
         </div>
     )
 }

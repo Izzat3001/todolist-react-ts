@@ -3,6 +3,8 @@ import './App.css'
 import {FilterValuesType} from "./App";
 import {AddItemForm} from "./AddItemForm";
 import {EditableSpan} from "./EditableSpan";
+import {Button, Checkbox, Grid, IconButton} from "@mui/material";
+import {Delete} from "@mui/icons-material";
 
 export type TaskType = {
     id: string,
@@ -50,62 +52,66 @@ export function TodoList(props: PropsType) {
     }
 
     return (
-        <div>
-            <div className="header-top">
-                <h3 className='top-title'>
-                    <EditableSpan title={props.title} onChange={changeTodoListTitle} />
+        <>
+            <Grid>
+                <h3>
+                    <EditableSpan title={props.title} onChange={changeTodoListTitle}/>
+                    <IconButton onClick={removeTodoList}>
+                        <Delete/>
+                    </IconButton>
                 </h3>
-                <button className='btn-remove' onClick={removeTodoList}>Del</button>
-            </div>
+            </Grid>
 
-            <AddItemForm addItem={addTask} />
-            <ul className="tasks-list">
-                {
-                    props.tasks.map((t) => {
-                        const onHandleDelet = () => {
-                            props.handlDelet(t.id, props.id)
-                        }
-                        const changeStatus = (e: ChangeEvent<HTMLInputElement>) => {
-                            props.changeStatusTask(t.id, e.currentTarget.checked, props.id)
-                        }
-                        const changeTitle = (newTitle: string) => {
-                            props.changeTaskTitle(t.id, newTitle, props.id)
-                        }
-                        return <li key={t.id} className={`tasks ${t.isDone ? "completed" : ""}`}>
-                            <div>
-                                <input
-                                    className='input-check'
-                                    type="checkbox"
-                                    onChange={changeStatus}
-                                    checked={t.isDone}
-                                />
-                                <EditableSpan title={t.title} onChange={changeTitle}/>
-                            </div>
-                            <button
-                                className='remuve-btn'
-                                onClick={onHandleDelet}
-                            >
-                                Del
-                            </button>
-                        </li>
-                    })
-                }
-            </ul>
-            <div className='filter-btn'>
-                <button
-                    onClick={onChangeFilterAll}
-                    className={`btn ${props.filterClass === "all" ? " active-filter" : ""}`}>All
-                </button>
-                <button
-                    onClick={onChangeFilterActive}
-                    className={`btn ${props.filterClass === "active" ? " active-filter" : ""}`}>Active
-                </button>
-                <button
-                    onClick={onChangeFilterComplited}
-                    className={`btn ${props.filterClass === "completed" ? " active-filter" : ""}`}>Complited
-                </button>
+            <AddItemForm addItem={addTask}/>
+            <div>
+                <ul>
+                    {
+                        props.tasks.map((t) => {
+                            const onHandleDelet = () => {
+                                props.handlDelet(t.id, props.id)
+                            }
+                            const changeStatus = (e: ChangeEvent<HTMLInputElement>) => {
+                                props.changeStatusTask(t.id, e.currentTarget.checked, props.id)
+                            }
+                            const changeTitle = (newTitle: string) => {
+                                props.changeTaskTitle(t.id, newTitle, props.id)
+                            }
+                            return (
+                                <li key={t.id} className={t.isDone ? "completed" : ""}>
+                                    <Checkbox
+                                        onChange={changeStatus}
+                                        checked={t.isDone}
+                                    />
+                                    <EditableSpan title={t.title} onChange={changeTitle}/>
+                                    <IconButton size="small" onClick={onHandleDelet}>
+                                        <Delete fontSize="small"/>
+                                    </IconButton>
+                                </li>
+                            )
+                        })
+                    }
+                </ul>
+                <div className='filter-btn'>
+                    <Button
+                        size='small'
+                        onClick={onChangeFilterAll}
+                        variant={props.filterClass === "all" ? "contained" : "text"}>All
+                    </Button>
+                    <Button
+                        size='small'
+                        onClick={onChangeFilterActive}
+                        color="primary"
+                        variant={props.filterClass === "active" ? "contained" : "text"}>Active
+                    </Button>
+                    <Button
+                        size='small'
+                        onClick={onChangeFilterComplited}
+                        color="secondary"
+                        variant={props.filterClass === "completed" ? "contained" : "text"}>Complited
+                    </Button>
+                </div>
             </div>
-        </div>
+        </>
     )
 }
 

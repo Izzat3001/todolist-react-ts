@@ -1,98 +1,98 @@
-.App {
-  padding: 30px;
-  display: flex;
-}
+/*.App {*/
+/*  padding: 30px;*/
+/*  display: flex;*/
+/*}*/
 
-.App > div{
-  margin-right: 50px;
-}
+/*.App > div{*/
+/*  margin-right: 50px;*/
+/*}*/
 
-.header-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+/*.header-top {*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  justify-content: space-between;*/
+/*}*/
 
-.top-title {
-  margin-bottom: 5px;
-}
+/*.top-title {*/
+/*  margin-bottom: 5px;*/
+/*}*/
 
-.input-add {
-  height: 25px;
-  padding: 5px 7px;
-  background-color: rgba(33, 176, 125, 0.7);
-  border: none;
-  border-bottom: 1px solid #000;
-  margin-right: 8px;
-  font-size: 12px;
-}
+/*.input-add {*/
+/*  height: 25px;*/
+/*  padding: 5px 7px;*/
+/*  background-color: rgba(33, 176, 125, 0.7);*/
+/*  border: none;*/
+/*  border-bottom: 1px solid #000;*/
+/*  margin-right: 8px;*/
+/*  font-size: 12px;*/
+/*}*/
 
-.input-add-error {
-  border: 1px solid red;
-}
+/*.input-add-error {*/
+/*  border: 1px solid red;*/
+/*}*/
 
-.error-message {
-  color: #c50404;
-}
+/*.error-message {*/
+/*  color: #c50404;*/
+/*}*/
 
-.btn-add {
-  width: 35px;
-  height: 25px;
-  cursor: pointer;
-  border: none;
-  border-radius: 5px;
-  font-size: 14px;
-  background-color: rgba(39, 20, 245, 0.7);
-}
+/*.btn-add {*/
+/*  width: 35px;*/
+/*  height: 25px;*/
+/*  cursor: pointer;*/
+/*  border: none;*/
+/*  border-radius: 5px;*/
+/*  font-size: 14px;*/
+/*  background-color: rgba(39, 20, 245, 0.7);*/
+/*}*/
 
-.btn-remove {
-  width: 35px;
-  height: 25px;
-  cursor: pointer;
-  border: none;
-  border-radius: 5px;
-  font-size: 14px;
-  background-color: rgba(192, 29, 29, 0.7);
-}
+/*.btn-remove {*/
+/*  width: 35px;*/
+/*  height: 25px;*/
+/*  cursor: pointer;*/
+/*  border: none;*/
+/*  border-radius: 5px;*/
+/*  font-size: 14px;*/
+/*  background-color: rgba(192, 29, 29, 0.7);*/
+/*}*/
 
-.filter-btn {
-  display: flex;
-  column-gap: 2px;
-}
+/*.filter-btn {*/
+/*  display: flex;*/
+/*  column-gap: 2px;*/
+/*}*/
 
-.btn {
-  padding-right: 5px;
-  padding-left: 5px;
-  background-color: #2ba4e3;
-  height: 25px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
+/*.btn {*/
+/*  padding-right: 5px;*/
+/*  padding-left: 5px;*/
+/*  background-color: #2ba4e3;*/
+/*  height: 25px;*/
+/*  border: none;*/
+/*  border-radius: 5px;*/
+/*  cursor: pointer;*/
+/*}*/
 
-.active-filter {
-  background-color: #422be3;
-}
+/*.active-filter {*/
+/*  background-color: #422be3;*/
+/*}*/
 
-.add-task {
-  display: flex;
-}
+/*.add-task {*/
+/*  display: flex;*/
+/*}*/
 
-.tasks {
-  display: flex;
-  width: 204px;
-  justify-content: space-between;
-}
+/*.tasks {*/
+/*  display: flex;*/
+/*  width: 204px;*/
+/*  justify-content: space-between;*/
+/*}*/
 
-.input-check {
-  margin-right: 5px;
-}
+/*.input-check {*/
+/*  margin-right: 5px;*/
+/*}*/
 
-.tasks-list {
-  margin-top: 10px;
-}
+/*.tasks-list {*/
+/*  margin-top: 10px;*/
+/*}*/
 
-.completed {
-  opacity: 0.5;
-}
+/*.completed {*/
+/*  opacity: 0.5;*/
+/*}*/
 
