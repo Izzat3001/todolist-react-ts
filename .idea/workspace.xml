@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0bd3cbb9-86af-4b1a-9ebf-107161c3ed0b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/state/todolists-reducer.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/todolists-reducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/user-reducer.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AddItemForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddItemForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EditableSpan.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/EditableSpan.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TodoList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/TodoList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,33 +30,97 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/izzat/Рабочий стол/ToDoLi-React+TS/todolist-react-ts/src/state&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs.jest.jest_package&quot;: &quot;C:/Users/izzat/Рабочий стол/ToDoLi-React+TS/todolist-react-ts/node_modules/react-scripts&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\izzat\\Рабочий стол\\ToDoLi-React+TS\\todolist-react-ts\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\izzat\Рабочий стол\ToDoLi-React+TS\todolist-react-ts\src\state" />
+    </key>
     <key name="es6.move.members.recent.items">
       <recent name="C:\Users\izzat\Рабочий стол\ToDoLi-React+TS\todolist-react-ts\src\AddItemForm.tsx" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start" />
-      </scripts>
+  <component name="RunManager" selected="Jest.correct todolist should be added">
+    <configuration name="correct todolist should be added" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
       <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/state/todolists-reducer.test.ts" />
+      <test-names>
+        <test-name value="correct todolist should be added" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="renders learn react link" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/App.test.tsx" />
+      <test-names>
+        <test-name value="renders learn react link" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="user reducer should change name of user" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/state/user-reducer.test.ts" />
+      <test-names>
+        <test-name value="user reducer should change name of user" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="user reducer should increment only age" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/state/user-reducer.test.ts" />
+      <test-names>
+        <test-name value="user reducer should increment only age" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="user reducer should increment only childrenCount" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/state/user-reducer.test.ts" />
+      <test-names>
+        <test-name value="user reducer should increment only childrenCount" />
+      </test-names>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start" />
+        <item itemvalue="Jest.correct todolist should be added" />
+        <item itemvalue="Jest.user reducer should change name of user" />
+        <item itemvalue="Jest.user reducer should increment only childrenCount" />
+        <item itemvalue="Jest.user reducer should increment only age" />
+        <item itemvalue="Jest.renders learn react link" />
       </list>
     </recent_temporary>
   </component>
@@ -88,7 +149,15 @@
       <workItem from="1702562529506" duration="9428000" />
       <workItem from="1702656500809" duration="8050000" />
       <workItem from="1702720893092" duration="3078000" />
-      <workItem from="1702970911598" duration="2750000" />
+      <workItem from="1702970911598" duration="4420000" />
+      <workItem from="1703167391234" duration="598000" />
+      <workItem from="1703170389007" duration="919000" />
+      <workItem from="1703322936695" duration="996000" />
+      <workItem from="1704203858119" duration="1798000" />
+      <workItem from="1705404801648" duration="1527000" />
+      <workItem from="1705407918647" duration="11261000" />
+      <workItem from="1705582725191" duration="39000" />
+      <workItem from="1705595983436" duration="32000" />
     </task>
     <servers />
   </component>

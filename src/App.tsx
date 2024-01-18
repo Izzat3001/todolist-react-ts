@@ -13,13 +13,9 @@ export type TypeTodoList = {
     filter: FilterValuesType,
 };
 
-type TaskStateType = {
+export type TaskStateType = {
     [key: string]: Array<TaskType>
 };
-
-function MenuIcon() {
-    return null;
-}
 
 function App() {
     const todoListId1 = v1();
@@ -83,7 +79,6 @@ function App() {
             task.isDone = isDone;
             setTasksObj({...tasksObj});
         }
-        ;
     };
 
     function changeTaskTitle(taskId: string, newTitle: string, todoListId: string) {
